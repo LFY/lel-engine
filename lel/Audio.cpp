@@ -60,14 +60,28 @@ Audio::Audio() {
 }
 
 void Audio::playMusic(const std::string& asset_dir,
-                      const std::string& basename) {
+                      const std::string& basename,
+	                  bool loop) {
     if (currMusic) {
         Mix_FreeMusic((Mix_Music*)currMusic);
     }
     Mix_Music* to_play = Mix_LoadMUS(pathCat(asset_dir, basename + ".ogg").c_str());
 	fprintf(stderr, "%s: to_play: %p err %s\n", __func__, to_play, Mix_GetError());
-    Mix_PlayMusic(to_play, 1);
+	Mix_PlayMusic(to_play, loop ? -1 : 1);
     currMusic = to_play;
+	assetDir = asset_dir;
+	shouldLoop = loop;
+	currMusicBasename = basename;
 }
+
+bool Audio::isMusicFinished() const {
+	return !Mix_Playing(1);
+}
+
+void Audio::update() {
+    // TODO
+}
+
+
 
 } // namespace LEL

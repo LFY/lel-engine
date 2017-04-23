@@ -36,7 +36,14 @@ public:
     Audio();
     static Audio* get();
     void playMusic(const std::string& asset_dir,
-                   const std::string& basename);
+                   const std::string& basename,
+		           bool loop = true);
+	bool isMusicFinished() const;
+	void update();
+
+	std::string assetDir;
+	std::string currMusicBasename;
+	bool shouldLoop = true;
 	void* currMusic = nullptr;
 
 };

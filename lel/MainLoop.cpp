@@ -27,6 +27,7 @@
 
 #include "MainLoop.h"
 
+#include "Audio.h"
 #include "EntitySystemControl.h"
 
 #include "lel.h"
@@ -121,6 +122,7 @@ int MainLoop::run() {
         }
 
         mWindow->post();
+		Audio::get()->update();
     }
 
     cleanupGameControllers();
