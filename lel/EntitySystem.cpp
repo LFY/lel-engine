@@ -265,6 +265,7 @@ void EntitySystem::removeStaticColliderById(uint32_t id) {
 void EntitySystem::reset() {
 
     delete gameMode;
+	gameMode = nullptr;
 
     for (const auto s : mSecondaryUpdates) {
         delete s;
@@ -272,6 +273,7 @@ void EntitySystem::reset() {
     mSecondaryUpdates.clear();
 
     delete mControl;
+	mControl = nullptr;
 
     mControlInfo.entity = 0;
 

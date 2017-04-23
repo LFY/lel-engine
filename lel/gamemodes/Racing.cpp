@@ -140,7 +140,7 @@ void Racing::update() {
 					fprintf(stderr, "%s: player collided!\n", __func__);
 					playerState.penaltyLapTime += 20000000; // 20 seconds
 					playerState.dead = true;
-					entitySystem->enqueueAction(4000000, new ResetEntitySystem(entitySystem));
+					entitySystem->enqueueAction(0, new ChangeEntitySystem(entitySystem, "mainmenu"));
 				}
 			}
 
@@ -149,7 +149,7 @@ void Racing::update() {
 					fprintf(stderr, "%s: player collided!\n", __func__);
 					playerState.penaltyLapTime += 20000000; // 20 seconds
 					playerState.dead = true;
-					entitySystem->enqueueAction(4000000, new ResetEntitySystem(entitySystem));
+					entitySystem->enqueueAction(0, new ChangeEntitySystem(entitySystem, "mainmenu"));
 				}
 			}
         }
