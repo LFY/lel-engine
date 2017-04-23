@@ -1,0 +1,43 @@
+define camera Camera 0 
+set camera Camera proj 49.134342 1.777778 0.100000 100.000000
+set camera Camera frame 3.242034 -12.583098 10.913918 -0.176866 0.705730 -0.686049 0.270248 0.705069 0.655625
+set camera Camera prop str __entity_name__ "Camera"
+set camera Camera prop str __entity_parent__ "selector"
+set camera Camera prop int currentCamera 1
+
+define model cube
+define entity cube 1
+set entity 1 frame -1.500000 2.000000 0.000000 -0.000000 0.337054 0.000000 0.000000 -0.000000 0.337054
+set entity 1 scale 0.337054 0.337054 0.337054
+set entity 1 prop str __entity_name__ "menuselector_exit"
+set entity 1 prop str static_text "exit"
+
+define entity cube 2
+set entity 2 frame -1.500000 0.000000 0.000000 -0.000000 0.337054 0.000000 0.000000 -0.000000 0.337054
+set entity 2 scale 0.337054 0.337054 0.337054
+set entity 2 prop str __entity_name__ "menuselector_start_level1"
+set entity 2 prop str static_text "level 1: intro"
+
+define entity cube 3
+set entity 3 frame -1.500000 -2.000000 0.000000 -0.000000 0.337054 0.000000 0.000000 -0.000000 0.337054
+set entity 3 scale 0.337054 0.337054 0.337054
+set entity 3 prop str __entity_name__ "menuselector_start_level2"
+set entity 3 prop str static_text "level 2: weave"
+
+define entity cube 4
+set entity 4 frame -1.500000 -4.000000 -0.000000 -0.000000 0.337054 0.000000 0.000000 -0.000000 0.337054
+set entity 4 scale 0.337054 0.337054 0.337054
+set entity 4 prop str __entity_name__ "menuselector_start_level3"
+set entity 4 prop str static_text "level 3: the reckoning"
+
+define model menuselector
+define entity menuselector 5
+set entity 5 frame -4.000000 0.000000 0.500000 -0.000000 -0.000000 1.000000 0.000000 -1.000000 -0.000000
+set entity 5 scale 1.000000 1.000000 1.000000
+set entity 5 prop str __entity_name__ "selector"
+set entity 5 prop int currentControl 1
+set entity 5 prop int menuselector 1
+set entity 5 prop int player 1
+set entity 5 prop str menuselector_opt "menuselector_start_level1 menuselector_start_level2 menuselector_start_level3 menuselector_exit"
+set entity 5 prop str menuselector_current "menuselector_start"
+

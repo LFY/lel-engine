@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE8863401EA832AC000693F4 /* MenuSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE88633C1EA832AC000693F4 /* MenuSelector.cpp */; };
+		EE9804C11E46FDDF00A484AA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9804C01E46FDDF00A484AA /* OpenGL.framework */; };
+		EE9804C31E46FDF000A484AA /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9804C21E46FDF000A484AA /* GLEW.framework */; };
+		EE9804C51E46FE0000A484AA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9804C41E46FE0000A484AA /* SDL2.framework */; };
+		EE9804CB1E46FE3400A484AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804CA1E46FE3400A484AA /* main.cpp */; };
+		EE9804DD1E46FE4100A484AA /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804CD1E46FE4100A484AA /* Entity.cpp */; };
+		EE9804DE1E46FE4100A484AA /* MainLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804D01E46FE4100A484AA /* MainLoop.cpp */; };
+		EE9804DF1E46FE4100A484AA /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804D21E46FE4100A484AA /* matrix.cpp */; };
+		EE9804E01E46FE4100A484AA /* OBB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804D41E46FE4100A484AA /* OBB.cpp */; };
+		EE9804E11E46FE4100A484AA /* OBJData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804D61E46FE4100A484AA /* OBJData.cpp */; };
+		EE9804E21E46FE4100A484AA /* RenderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804D91E46FE4100A484AA /* RenderModel.cpp */; };
+		EE9804E31E46FE4100A484AA /* RenderWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804DB1E46FE4100A484AA /* RenderWindow.cpp */; };
+		EE9804E81E46FF8400A484AA /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804E61E46FF8400A484AA /* lodepng.cpp */; };
+		EE9804EA1E4701D400A484AA /* lel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804E91E4701D400A484AA /* lel.cpp */; };
+		EE9804EE1E47165A00A484AA /* GameControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9804EC1E47165A00A484AA /* GameControllers.cpp */; };
+		EEC348E51E8F52E400312A92 /* Racing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEC348E31E8F52E400312A92 /* Racing.cpp */; };
+		EEC348EA1E8F530700312A92 /* TextDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEC348E71E8F530700312A92 /* TextDisplay.cpp */; };
+		EEC348EC1E94686400312A92 /* Compass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEC348EB1E94686400312A92 /* Compass.cpp */; };
+		EEFCE99E1E6392A800843409 /* Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFCE9951E6392A800843409 /* Collider.cpp */; };
+		EEFCE99F1E6392A800843409 /* EntitySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFCE9981E6392A800843409 /* EntitySystem.cpp */; };
+		EEFCE9A01E6392A800843409 /* EntitySystemControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFCE9991E6392A800843409 /* EntitySystemControl.cpp */; };
+		EEFCE9A11E6392A800843409 /* EntitySystemRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFCE99B1E6392A800843409 /* EntitySystemRenderer.cpp */; };
+		EEFCE9A21E6392A800843409 /* lel_sdl2_opengl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFCE99D1E6392A800843409 /* lel_sdl2_opengl.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE9804B31E46FDB900A484AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE88633C1EA832AC000693F4 /* MenuSelector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuSelector.cpp; path = ../lel/MenuSelector.cpp; sourceTree = "<group>"; };
+		EE88633D1EA832AC000693F4 /* MenuSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSelector.h; path = ../lel/MenuSelector.h; sourceTree = "<group>"; };
+		EE88633E1EA832AC000693F4 /* SecondaryUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondaryUpdate.h; path = ../lel/SecondaryUpdate.h; sourceTree = "<group>"; };
+		EE88633F1EA832AC000693F4 /* GL32RenderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GL32RenderState.h; path = ../lel/GL32RenderState.h; sourceTree = "<group>"; };
+		EE9804B51E46FDB900A484AA /* LEL-xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LEL-xcode"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9804C01E46FDDF00A484AA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EE9804C21E46FDF000A484AA /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = ../../../../Library/Frameworks/GLEW.framework; sourceTree = "<group>"; };
+		EE9804C41E46FE0000A484AA /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		EE9804CA1E46FE3400A484AA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		EE9804CC1E46FE4100A484AA /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = ../lel/Camera.h; sourceTree = "<group>"; };
+		EE9804CD1E46FE4100A484AA /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = ../lel/Entity.cpp; sourceTree = "<group>"; };
+		EE9804CE1E46FE4100A484AA /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../lel/Entity.h; sourceTree = "<group>"; };
+		EE9804CF1E46FE4100A484AA /* lel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lel.h; path = ../lel/lel.h; sourceTree = "<group>"; };
+		EE9804D01E46FE4100A484AA /* MainLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainLoop.cpp; path = ../lel/MainLoop.cpp; sourceTree = "<group>"; };
+		EE9804D11E46FE4100A484AA /* MainLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainLoop.h; path = ../lel/MainLoop.h; sourceTree = "<group>"; };
+		EE9804D21E46FE4100A484AA /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = ../lel/matrix.cpp; sourceTree = "<group>"; };
+		EE9804D31E46FE4100A484AA /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = ../lel/matrix.h; sourceTree = "<group>"; };
+		EE9804D41E46FE4100A484AA /* OBB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OBB.cpp; path = ../lel/OBB.cpp; sourceTree = "<group>"; };
+		EE9804D51E46FE4100A484AA /* OBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBB.h; path = ../lel/OBB.h; sourceTree = "<group>"; };
+		EE9804D61E46FE4100A484AA /* OBJData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OBJData.cpp; path = ../lel/OBJData.cpp; sourceTree = "<group>"; };
+		EE9804D71E46FE4100A484AA /* OBJData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBJData.h; path = ../lel/OBJData.h; sourceTree = "<group>"; };
+		EE9804D81E46FE4100A484AA /* RefFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RefFrame.h; path = ../lel/RefFrame.h; sourceTree = "<group>"; };
+		EE9804D91E46FE4100A484AA /* RenderModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderModel.cpp; path = ../lel/RenderModel.cpp; sourceTree = "<group>"; };
+		EE9804DA1E46FE4100A484AA /* RenderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderModel.h; path = ../lel/RenderModel.h; sourceTree = "<group>"; };
+		EE9804DB1E46FE4100A484AA /* RenderWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderWindow.cpp; path = ../lel/RenderWindow.cpp; sourceTree = "<group>"; };
+		EE9804DC1E46FE4100A484AA /* RenderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderWindow.h; path = ../lel/RenderWindow.h; sourceTree = "<group>"; };
+		EE9804E41E46FF0100A484AA /* lel_sdl2_opengl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lel_sdl2_opengl.h; path = ../lel/lel_sdl2_opengl.h; sourceTree = "<group>"; };
+		EE9804E61E46FF8400A484AA /* lodepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lodepng.cpp; path = ../third_party/lodepng/lodepng.cpp; sourceTree = "<group>"; };
+		EE9804E71E46FF8400A484AA /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lodepng.h; path = ../third_party/lodepng/lodepng.h; sourceTree = "<group>"; };
+		EE9804E91E4701D400A484AA /* lel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lel.cpp; path = ../lel/lel.cpp; sourceTree = "<group>"; };
+		EE9804EC1E47165A00A484AA /* GameControllers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameControllers.cpp; path = ../lel/GameControllers.cpp; sourceTree = "<group>"; };
+		EE9804ED1E47165A00A484AA /* GameControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameControllers.h; path = ../lel/GameControllers.h; sourceTree = "<group>"; };
+		EE9804EF1E471C5B00A484AA /* EntitySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntitySystem.h; path = ../lel/EntitySystem.h; sourceTree = "<group>"; };
+		EEC348E31E8F52E400312A92 /* Racing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Racing.cpp; path = ../lel/gamemodes/Racing.cpp; sourceTree = "<group>"; };
+		EEC348E41E8F52E400312A92 /* Racing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Racing.h; path = ../lel/gamemodes/Racing.h; sourceTree = "<group>"; };
+		EEC348E61E8F530700312A92 /* TextDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextDisplay.h; path = ../lel/TextDisplay.h; sourceTree = "<group>"; };
+		EEC348E71E8F530700312A92 /* TextDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextDisplay.cpp; path = ../lel/TextDisplay.cpp; sourceTree = "<group>"; };
+		EEC348E81E8F530700312A92 /* GameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameMode.h; path = ../lel/GameMode.h; sourceTree = "<group>"; };
+		EEC348E91E8F530700312A92 /* Compass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Compass.h; path = ../lel/Compass.h; sourceTree = "<group>"; };
+		EEC348EB1E94686400312A92 /* Compass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Compass.cpp; path = ../lel/Compass.cpp; sourceTree = "<group>"; };
+		EEFCE9951E6392A800843409 /* Collider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Collider.cpp; path = ../lel/Collider.cpp; sourceTree = "<group>"; };
+		EEFCE9961E6392A800843409 /* Collider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collider.h; path = ../lel/Collider.h; sourceTree = "<group>"; };
+		EEFCE9971E6392A800843409 /* EntityAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntityAction.h; path = ../lel/EntityAction.h; sourceTree = "<group>"; };
+		EEFCE9981E6392A800843409 /* EntitySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EntitySystem.cpp; path = ../lel/EntitySystem.cpp; sourceTree = "<group>"; };
+		EEFCE9991E6392A800843409 /* EntitySystemControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EntitySystemControl.cpp; path = ../lel/EntitySystemControl.cpp; sourceTree = "<group>"; };
+		EEFCE99A1E6392A800843409 /* EntitySystemControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntitySystemControl.h; path = ../lel/EntitySystemControl.h; sourceTree = "<group>"; };
+		EEFCE99B1E6392A800843409 /* EntitySystemRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EntitySystemRenderer.cpp; path = ../lel/EntitySystemRenderer.cpp; sourceTree = "<group>"; };
+		EEFCE99C1E6392A800843409 /* EntitySystemRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntitySystemRenderer.h; path = ../lel/EntitySystemRenderer.h; sourceTree = "<group>"; };
+		EEFCE99D1E6392A800843409 /* lel_sdl2_opengl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lel_sdl2_opengl.cpp; path = ../lel/lel_sdl2_opengl.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE9804B21E46FDB900A484AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9804C51E46FE0000A484AA /* SDL2.framework in Frameworks */,
+				EE9804C31E46FDF000A484AA /* GLEW.framework in Frameworks */,
+				EE9804C11E46FDDF00A484AA /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE9804AC1E46FDB900A484AA = {
+			isa = PBXGroup;
+			children = (
+				EE9804C61E46FE0C00A484AA /* Source */,
+				EE9804B61E46FDB900A484AA /* Products */,
+				EE9804BF1E46FDDF00A484AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE9804B61E46FDB900A484AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE9804B51E46FDB900A484AA /* LEL-xcode */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE9804BF1E46FDDF00A484AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE9804C41E46FE0000A484AA /* SDL2.framework */,
+				EE9804C21E46FDF000A484AA /* GLEW.framework */,
+				EE9804C01E46FDDF00A484AA /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9804C61E46FE0C00A484AA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EE9804CA1E46FE3400A484AA /* main.cpp */,
+				EE9804E51E46FF6E00A484AA /* third_party */,
+				EE9804C71E46FE1300A484AA /* lel */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		EE9804C71E46FE1300A484AA /* lel */ = {
+			isa = PBXGroup;
+			children = (
+				EE88633C1EA832AC000693F4 /* MenuSelector.cpp */,
+				EE88633D1EA832AC000693F4 /* MenuSelector.h */,
+				EE88633E1EA832AC000693F4 /* SecondaryUpdate.h */,
+				EE88633F1EA832AC000693F4 /* GL32RenderState.h */,
+				EEC348EB1E94686400312A92 /* Compass.cpp */,
+				EEC348E61E8F530700312A92 /* TextDisplay.h */,
+				EEC348E71E8F530700312A92 /* TextDisplay.cpp */,
+				EEC348E81E8F530700312A92 /* GameMode.h */,
+				EEC348E91E8F530700312A92 /* Compass.h */,
+				EEC348E31E8F52E400312A92 /* Racing.cpp */,
+				EEC348E41E8F52E400312A92 /* Racing.h */,
+				EEFCE9951E6392A800843409 /* Collider.cpp */,
+				EEFCE9961E6392A800843409 /* Collider.h */,
+				EEFCE9971E6392A800843409 /* EntityAction.h */,
+				EEFCE9981E6392A800843409 /* EntitySystem.cpp */,
+				EEFCE9991E6392A800843409 /* EntitySystemControl.cpp */,
+				EEFCE99A1E6392A800843409 /* EntitySystemControl.h */,
+				EEFCE99B1E6392A800843409 /* EntitySystemRenderer.cpp */,
+				EEFCE99C1E6392A800843409 /* EntitySystemRenderer.h */,
+				EEFCE99D1E6392A800843409 /* lel_sdl2_opengl.cpp */,
+				EE9804EF1E471C5B00A484AA /* EntitySystem.h */,
+				EE9804EC1E47165A00A484AA /* GameControllers.cpp */,
+				EE9804ED1E47165A00A484AA /* GameControllers.h */,
+				EE9804CC1E46FE4100A484AA /* Camera.h */,
+				EE9804CD1E46FE4100A484AA /* Entity.cpp */,
+				EE9804CE1E46FE4100A484AA /* Entity.h */,
+				EE9804CF1E46FE4100A484AA /* lel.h */,
+				EE9804D01E46FE4100A484AA /* MainLoop.cpp */,
+				EE9804D11E46FE4100A484AA /* MainLoop.h */,
+				EE9804D21E46FE4100A484AA /* matrix.cpp */,
+				EE9804D31E46FE4100A484AA /* matrix.h */,
+				EE9804D41E46FE4100A484AA /* OBB.cpp */,
+				EE9804D51E46FE4100A484AA /* OBB.h */,
+				EE9804D61E46FE4100A484AA /* OBJData.cpp */,
+				EE9804D71E46FE4100A484AA /* OBJData.h */,
+				EE9804D81E46FE4100A484AA /* RefFrame.h */,
+				EE9804D91E46FE4100A484AA /* RenderModel.cpp */,
+				EE9804DA1E46FE4100A484AA /* RenderModel.h */,
+				EE9804DB1E46FE4100A484AA /* RenderWindow.cpp */,
+				EE9804DC1E46FE4100A484AA /* RenderWindow.h */,
+				EE9804E41E46FF0100A484AA /* lel_sdl2_opengl.h */,
+				EE9804E91E4701D400A484AA /* lel.cpp */,
+			);
+			name = lel;
+			sourceTree = "<group>";
+		};
+		EE9804E51E46FF6E00A484AA /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				EE9804E61E46FF8400A484AA /* lodepng.cpp */,
+				EE9804E71E46FF8400A484AA /* lodepng.h */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE9804B41E46FDB900A484AA /* LEL-xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9804BC1E46FDB900A484AA /* Build configuration list for PBXNativeTarget "LEL-xcode" */;
+			buildPhases = (
+				EE9804B11E46FDB900A484AA /* Sources */,
+				EE9804B21E46FDB900A484AA /* Frameworks */,
+				EE9804B31E46FDB900A484AA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LEL-xcode";
+			productName = "LEL-xcode";
+			productReference = EE9804B51E46FDB900A484AA /* LEL-xcode */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE9804AD1E46FDB900A484AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Lingfeng Yang";
+				TargetAttributes = {
+					EE9804B41E46FDB900A484AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE9804B01E46FDB900A484AA /* Build configuration list for PBXProject "LEL-xcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE9804AC1E46FDB900A484AA;
+			productRefGroup = EE9804B61E46FDB900A484AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE9804B41E46FDB900A484AA /* LEL-xcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE9804B11E46FDB900A484AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9804E21E46FE4100A484AA /* RenderModel.cpp in Sources */,
+				EE9804E31E46FE4100A484AA /* RenderWindow.cpp in Sources */,
+				EEC348E51E8F52E400312A92 /* Racing.cpp in Sources */,
+				EE9804DF1E46FE4100A484AA /* matrix.cpp in Sources */,
+				EE9804EA1E4701D400A484AA /* lel.cpp in Sources */,
+				EE9804E01E46FE4100A484AA /* OBB.cpp in Sources */,
+				EE9804DD1E46FE4100A484AA /* Entity.cpp in Sources */,
+				EE9804E11E46FE4100A484AA /* OBJData.cpp in Sources */,
+				EEFCE9A01E6392A800843409 /* EntitySystemControl.cpp in Sources */,
+				EEFCE99E1E6392A800843409 /* Collider.cpp in Sources */,
+				EEFCE9A21E6392A800843409 /* lel_sdl2_opengl.cpp in Sources */,
+				EE8863401EA832AC000693F4 /* MenuSelector.cpp in Sources */,
+				EEC348EA1E8F530700312A92 /* TextDisplay.cpp in Sources */,
+				EE9804E81E46FF8400A484AA /* lodepng.cpp in Sources */,
+				EEC348EC1E94686400312A92 /* Compass.cpp in Sources */,
+				EE9804EE1E47165A00A484AA /* GameControllers.cpp in Sources */,
+				EE9804DE1E46FE4100A484AA /* MainLoop.cpp in Sources */,
+				EEFCE9A11E6392A800843409 /* EntitySystemRenderer.cpp in Sources */,
+				EE9804CB1E46FE3400A484AA /* main.cpp in Sources */,
+				EEFCE99F1E6392A800843409 /* EntitySystem.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE9804BA1E46FDB900A484AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE9804BB1E46FDB900A484AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE9804BD1E46FDB900A484AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE9804BE1E46FDB900A484AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9804B01E46FDB900A484AA /* Build configuration list for PBXProject "LEL-xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9804BA1E46FDB900A484AA /* Debug */,
+				EE9804BB1E46FDB900A484AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9804BC1E46FDB900A484AA /* Build configuration list for PBXNativeTarget "LEL-xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9804BD1E46FDB900A484AA /* Debug */,
+				EE9804BE1E46FDB900A484AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE9804AD1E46FDB900A484AA /* Project object */;
+}
