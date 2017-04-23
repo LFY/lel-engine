@@ -1,0 +1,1576 @@
+set prop str gamemode "racing"
+define camera Camera 0 
+set camera Camera proj 90.000003 1.777778 0.100000 100.000000
+set camera Camera frame 0.000000 -4.789435 1.924184 -0.000000 1.000000 -0.000000 0.000000 0.000000 1.000000
+set camera Camera prop str __entity_name__ "Camera"
+set camera Camera prop str __entity_parent__ "shippy"
+set camera Camera prop int currentCamera 1
+
+define model cube
+define entity cube 1
+set entity 1 frame -2.551149 45.221855 0.607311 -0.468468 2.079664 -0.843358 -0.794705 0.651975 2.049168
+set entity 1 scale 2.292536 2.292535 2.292536
+set entity 1 prop str __entity_name__ "cube.000"
+set entity 1 prop int racing_static_collide 1
+
+define entity cube 2
+set entity 2 frame -0.920601 -3.602047 2.352205 -0.000000 0.025000 0.000000 0.000000 -0.000000 0.025000
+set entity 2 scale 0.025000 0.025000 0.025000
+set entity 2 prop str __entity_name__ "cube.001"
+set entity 2 prop str __entity_parent__ "Camera"
+set entity 2 prop int dynamic_text_lap_time 1
+
+define entity cube 3
+set entity 3 frame -0.920601 -3.602047 1.670098 -0.000000 0.015000 0.000000 0.000000 -0.000000 0.015000
+set entity 3 scale 0.015000 0.015000 0.015000
+set entity 3 prop str __entity_name__ "cube.002"
+set entity 3 prop str __entity_parent__ "Camera"
+set entity 3 prop int dynamic_text_last_lap 1
+
+define entity cube 4
+set entity 4 frame -0.923066 -3.601338 1.420360 -0.000000 0.020000 0.000000 0.000000 -0.000000 0.020000
+set entity 4 scale 0.020000 0.020000 0.020000
+set entity 4 prop str __entity_name__ "cube.003"
+set entity 4 prop str __entity_parent__ "Camera"
+set entity 4 prop int dynamic_text_best_lap 1
+
+define entity cube 5
+set entity 5 frame -4.913765 120.654793 2.747909 -1.081285 4.800129 -1.946578 -1.834280 1.504840 4.729740
+set entity 5 scale 5.291461 5.291462 5.291463
+set entity 5 prop str __entity_name__ "cube.004"
+set entity 5 prop int racing_static_collide 1
+
+define entity cube 6
+set entity 6 frame 1.292038 181.402802 -3.163845 -4.972780 1.587139 -0.867197 -1.582819 -5.046649 -0.159965
+set entity 6 scale 5.291461 5.291462 5.291463
+set entity 6 prop str __entity_name__ "cube.005"
+set entity 6 prop int racing_static_collide 1
+
+define entity cube 7
+set entity 7 frame -1.790308 314.879608 8.412176 -4.972780 1.587139 -0.867197 -1.582819 -5.046649 -0.159965
+set entity 7 scale 5.291461 5.291462 5.291463
+set entity 7 prop str __entity_name__ "cube.006"
+set entity 7 prop int racing_static_collide 1
+
+define entity cube 8
+set entity 8 frame -1.790308 399.228149 -4.070736 -4.972780 1.587139 -0.867197 -1.582819 -5.046649 -0.159965
+set entity 8 scale 5.291461 5.291462 5.291463
+set entity 8 prop str __entity_name__ "cube.007"
+set entity 8 prop int racing_static_collide 1
+
+define entity cube 9
+set entity 9 frame 0.849438 582.066406 -4.405467 -4.972780 1.587139 -0.867197 -1.582819 -5.046649 -0.159965
+set entity 9 scale 5.291461 5.291462 5.291463
+set entity 9 prop str __entity_name__ "cube.008"
+set entity 9 prop int racing_static_collide 1
+
+define entity cube 10
+set entity 10 frame 0.000000 13.221123 6.146337 -0.204345 0.907146 -0.367871 -0.346649 0.284390 0.893844
+set entity 10 scale 1.000000 1.000000 1.000000
+set entity 10 prop str __entity_name__ "cube.010"
+set entity 10 prop int racing_static_collide 1
+
+define model gate
+define entity gate 11
+set entity 11 frame 0.000000 718.247314 2.709618 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 11 scale 1.000000 1.000000 1.000000
+set entity 11 prop str __entity_name__ "Cube_Cube.000"
+set entity 11 prop int racetrackSeq 1
+
+define entity gate 12
+set entity 12 frame 0.000000 2.693644 2.709618 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 12 scale 1.000000 1.000000 1.000000
+set entity 12 prop str __entity_name__ "Cube_Cube.001"
+set entity 12 prop int racetrackSeq 0
+
+define model floor_square
+define entity floor_square 13
+set entity 13 frame 0.000000 0.000000 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 13 scale 1.000000 1.000000 1.000000
+set entity 13 prop str __entity_name__ "Cube_Cube.002"
+set entity 13 prop int racing_static_collide 1
+
+define entity floor_square 14
+set entity 14 frame 0.000000 21.207079 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 14 scale 1.000000 1.000000 1.000000
+set entity 14 prop str __entity_name__ "Cube_Cube.003"
+set entity 14 prop int racing_static_collide 1
+
+define entity floor_square 15
+set entity 15 frame 0.000000 43.271660 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 15 scale 1.000000 1.000000 1.000000
+set entity 15 prop str __entity_name__ "Cube_Cube.004"
+set entity 15 prop int racing_static_collide 1
+
+define entity floor_square 16
+set entity 16 frame 0.000000 43.271660 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 16 scale 1.000000 1.000000 1.000000
+set entity 16 prop str __entity_name__ "Cube_Cube.005"
+set entity 16 prop int racing_static_collide 1
+
+define entity floor_square 17
+set entity 17 frame 0.000000 21.207079 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 17 scale 1.000000 1.000000 1.000000
+set entity 17 prop str __entity_name__ "Cube_Cube.006"
+set entity 17 prop int racing_static_collide 1
+
+define entity floor_square 18
+set entity 18 frame 0.000000 65.687531 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 18 scale 1.000000 1.000000 1.000000
+set entity 18 prop str __entity_name__ "Cube_Cube.007"
+set entity 18 prop int racing_static_collide 1
+
+define entity floor_square 19
+set entity 19 frame 0.000000 87.752106 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 19 scale 1.000000 1.000000 1.000000
+set entity 19 prop str __entity_name__ "Cube_Cube.008"
+set entity 19 prop int racing_static_collide 1
+
+define model obelisk01
+define entity obelisk01 20
+set entity 20 frame -6.630254 18.520767 1.876202 -0.093446 0.995115 0.031847 0.900365 0.098116 -0.423929
+set entity 20 scale 1.000000 1.000000 1.000000
+set entity 20 prop str __entity_name__ "Cube_Cube.009"
+set entity 20 prop int racing_static_collide 1
+
+define entity floor_square 21
+set entity 21 frame 0.000000 176.708344 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 21 scale 1.000000 1.000000 1.000000
+set entity 21 prop str __entity_name__ "Cube_Cube.010"
+set entity 21 prop int racing_static_collide 1
+
+define entity floor_square 22
+set entity 22 frame 0.000000 154.643768 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 22 scale 1.000000 1.000000 1.000000
+set entity 22 prop str __entity_name__ "Cube_Cube.011"
+set entity 22 prop int racing_static_collide 1
+
+define entity gate 23
+set entity 23 frame 8.931416 746.542542 -3.160166 -0.999771 -0.021394 0.000000 0.000000 0.000000 1.000000
+set entity 23 scale 1.000000 1.000000 1.000000
+set entity 23 prop str __entity_name__ "Cube_Cube.012"
+set entity 23 prop int racetrackSeq 2
+
+define entity floor_square 24
+set entity 24 frame 0.000000 110.163322 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 24 scale 1.000000 1.000000 1.000000
+set entity 24 prop str __entity_name__ "Cube_Cube.013"
+set entity 24 prop int racing_static_collide 1
+
+define entity floor_square 25
+set entity 25 frame 0.000000 132.227905 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 25 scale 1.000000 1.000000 1.000000
+set entity 25 prop str __entity_name__ "Cube_Cube.014"
+set entity 25 prop int racing_static_collide 1
+
+define entity floor_square 26
+set entity 26 frame -0.236947 310.098694 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 26 scale 1.000000 1.000000 1.000000
+set entity 26 prop str __entity_name__ "Cube_Cube.015"
+set entity 26 prop int racing_static_collide 1
+
+define entity floor_square 27
+set entity 27 frame -0.236947 288.034088 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 27 scale 1.000000 1.000000 1.000000
+set entity 27 prop str __entity_name__ "Cube_Cube.016"
+set entity 27 prop int racing_static_collide 1
+
+define entity floor_square 28
+set entity 28 frame -0.236947 332.514526 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 28 scale 1.000000 1.000000 1.000000
+set entity 28 prop str __entity_name__ "Cube_Cube.017"
+set entity 28 prop int racing_static_collide 1
+
+define entity floor_square 29
+set entity 29 frame -0.236947 354.579102 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 29 scale 1.000000 1.000000 1.000000
+set entity 29 prop str __entity_name__ "Cube_Cube.018"
+set entity 29 prop int racing_static_collide 1
+
+define entity gate 30
+set entity 30 frame 0.000000 -42.294872 -11.799312 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 30 scale 1.000000 1.000000 1.000000
+set entity 30 prop str __entity_name__ "Cube_Cube.019"
+set entity 30 prop int racetrackSeq 3
+
+define entity floor_square 31
+set entity 31 frame -0.236947 265.622864 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 31 scale 1.000000 1.000000 1.000000
+set entity 31 prop str __entity_name__ "Cube_Cube.020"
+set entity 31 prop int racing_static_collide 1
+
+define entity floor_square 32
+set entity 32 frame -0.236947 243.558304 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 32 scale 1.000000 1.000000 1.000000
+set entity 32 prop str __entity_name__ "Cube_Cube.021"
+set entity 32 prop int racing_static_collide 1
+
+define entity floor_square 33
+set entity 33 frame -0.236947 199.077850 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 33 scale 1.000000 1.000000 1.000000
+set entity 33 prop str __entity_name__ "Cube_Cube.022"
+set entity 33 prop int racing_static_collide 1
+
+define entity floor_square 34
+set entity 34 frame -0.236947 221.142426 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 34 scale 1.000000 1.000000 1.000000
+set entity 34 prop str __entity_name__ "Cube_Cube.023"
+set entity 34 prop int racing_static_collide 1
+
+define entity floor_square 35
+set entity 35 frame -0.236947 576.856079 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 35 scale 1.000000 1.000000 1.000000
+set entity 35 prop str __entity_name__ "Cube_Cube.024"
+set entity 35 prop int racing_static_collide 1
+
+define entity floor_square 36
+set entity 36 frame -0.236947 554.791504 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 36 scale 1.000000 1.000000 1.000000
+set entity 36 prop str __entity_name__ "Cube_Cube.025"
+set entity 36 prop int racing_static_collide 1
+
+define entity floor_square 37
+set entity 37 frame -0.236947 599.271973 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 37 scale 1.000000 1.000000 1.000000
+set entity 37 prop str __entity_name__ "Cube_Cube.026"
+set entity 37 prop int racing_static_collide 1
+
+define entity floor_square 38
+set entity 38 frame -0.236947 621.336548 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 38 scale 1.000000 1.000000 1.000000
+set entity 38 prop str __entity_name__ "Cube_Cube.027"
+set entity 38 prop int racing_static_collide 1
+
+define entity floor_square 39
+set entity 39 frame -0.236947 710.292725 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 39 scale 1.000000 1.000000 1.000000
+set entity 39 prop str __entity_name__ "Cube_Cube.028"
+set entity 39 prop int racing_static_collide 1
+
+define entity floor_square 40
+set entity 40 frame -0.236947 688.228149 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 40 scale 1.000000 1.000000 1.000000
+set entity 40 prop str __entity_name__ "Cube_Cube.029"
+set entity 40 prop int racing_static_collide 1
+
+define entity floor_square 41
+set entity 41 frame -0.236947 643.747742 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 41 scale 1.000000 1.000000 1.000000
+set entity 41 prop str __entity_name__ "Cube_Cube.030"
+set entity 41 prop int racing_static_collide 1
+
+define entity floor_square 42
+set entity 42 frame -0.236947 665.812378 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 42 scale 1.000000 1.000000 1.000000
+set entity 42 prop str __entity_name__ "Cube_Cube.031"
+set entity 42 prop int racing_static_collide 1
+
+define entity floor_square 43
+set entity 43 frame 0.000000 487.941559 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 43 scale 1.000000 1.000000 1.000000
+set entity 43 prop str __entity_name__ "Cube_Cube.032"
+set entity 43 prop int racing_static_collide 1
+
+define entity floor_square 44
+set entity 44 frame 0.000000 465.876984 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 44 scale 1.000000 1.000000 1.000000
+set entity 44 prop str __entity_name__ "Cube_Cube.033"
+set entity 44 prop int racing_static_collide 1
+
+define entity floor_square 45
+set entity 45 frame 0.000000 510.357422 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 45 scale 1.000000 1.000000 1.000000
+set entity 45 prop str __entity_name__ "Cube_Cube.034"
+set entity 45 prop int racing_static_collide 1
+
+define entity floor_square 46
+set entity 46 frame 0.000000 532.421997 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 46 scale 1.000000 1.000000 1.000000
+set entity 46 prop str __entity_name__ "Cube_Cube.035"
+set entity 46 prop int racing_static_collide 1
+
+define entity floor_square 47
+set entity 47 frame 0.000000 443.465759 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 47 scale 1.000000 1.000000 1.000000
+set entity 47 prop str __entity_name__ "Cube_Cube.036"
+set entity 47 prop int racing_static_collide 1
+
+define entity floor_square 48
+set entity 48 frame 0.000000 421.401184 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 48 scale 1.000000 1.000000 1.000000
+set entity 48 prop str __entity_name__ "Cube_Cube.037"
+set entity 48 prop int racing_static_collide 1
+
+define entity floor_square 49
+set entity 49 frame 0.000000 376.920746 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 49 scale 1.000000 1.000000 1.000000
+set entity 49 prop str __entity_name__ "Cube_Cube.038"
+set entity 49 prop int racing_static_collide 1
+
+define entity floor_square 50
+set entity 50 frame 0.000000 398.985321 -4.433626 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 50 scale 1.000000 1.000000 1.000000
+set entity 50 prop str __entity_name__ "Cube_Cube.039"
+set entity 50 prop int racing_static_collide 1
+
+define entity floor_square 51
+set entity 51 frame -5.846404 398.985321 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 51 scale 1.000000 1.000000 1.000000
+set entity 51 prop str __entity_name__ "Cube_Cube.040"
+set entity 51 prop int racing_static_collide 1
+
+define entity floor_square 52
+set entity 52 frame -5.846404 376.920746 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 52 scale 1.000000 1.000000 1.000000
+set entity 52 prop str __entity_name__ "Cube_Cube.041"
+set entity 52 prop int racing_static_collide 1
+
+define entity floor_square 53
+set entity 53 frame -5.846404 421.401184 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 53 scale 1.000000 1.000000 1.000000
+set entity 53 prop str __entity_name__ "Cube_Cube.042"
+set entity 53 prop int racing_static_collide 1
+
+define entity floor_square 54
+set entity 54 frame -5.846404 443.465759 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 54 scale 1.000000 1.000000 1.000000
+set entity 54 prop str __entity_name__ "Cube_Cube.043"
+set entity 54 prop int racing_static_collide 1
+
+define entity floor_square 55
+set entity 55 frame -5.846404 532.421997 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 55 scale 1.000000 1.000000 1.000000
+set entity 55 prop str __entity_name__ "Cube_Cube.044"
+set entity 55 prop int racing_static_collide 1
+
+define entity floor_square 56
+set entity 56 frame -5.846404 510.357422 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 56 scale 1.000000 1.000000 1.000000
+set entity 56 prop str __entity_name__ "Cube_Cube.045"
+set entity 56 prop int racing_static_collide 1
+
+define entity floor_square 57
+set entity 57 frame -5.846404 465.876984 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 57 scale 1.000000 1.000000 1.000000
+set entity 57 prop str __entity_name__ "Cube_Cube.046"
+set entity 57 prop int racing_static_collide 1
+
+define entity floor_square 58
+set entity 58 frame -5.846404 487.941559 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 58 scale 1.000000 1.000000 1.000000
+set entity 58 prop str __entity_name__ "Cube_Cube.047"
+set entity 58 prop int racing_static_collide 1
+
+define entity floor_square 59
+set entity 59 frame -5.714959 665.812378 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 59 scale 1.000000 1.000000 1.000000
+set entity 59 prop str __entity_name__ "Cube_Cube.048"
+set entity 59 prop int racing_static_collide 1
+
+define entity floor_square 60
+set entity 60 frame -5.714959 643.747742 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 60 scale 1.000000 1.000000 1.000000
+set entity 60 prop str __entity_name__ "Cube_Cube.049"
+set entity 60 prop int racing_static_collide 1
+
+define entity floor_square 61
+set entity 61 frame -5.714959 688.228149 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 61 scale 1.000000 1.000000 1.000000
+set entity 61 prop str __entity_name__ "Cube_Cube.050"
+set entity 61 prop int racing_static_collide 1
+
+define entity floor_square 62
+set entity 62 frame -5.714959 710.292725 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 62 scale 1.000000 1.000000 1.000000
+set entity 62 prop str __entity_name__ "Cube_Cube.051"
+set entity 62 prop int racing_static_collide 1
+
+define entity floor_square 63
+set entity 63 frame -5.714959 621.336548 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 63 scale 1.000000 1.000000 1.000000
+set entity 63 prop str __entity_name__ "Cube_Cube.052"
+set entity 63 prop int racing_static_collide 1
+
+define entity floor_square 64
+set entity 64 frame -5.714959 599.271973 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 64 scale 1.000000 1.000000 1.000000
+set entity 64 prop str __entity_name__ "Cube_Cube.053"
+set entity 64 prop int racing_static_collide 1
+
+define entity floor_square 65
+set entity 65 frame -5.714959 554.791504 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 65 scale 1.000000 1.000000 1.000000
+set entity 65 prop str __entity_name__ "Cube_Cube.054"
+set entity 65 prop int racing_static_collide 1
+
+define entity floor_square 66
+set entity 66 frame -5.714959 576.856079 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 66 scale 1.000000 1.000000 1.000000
+set entity 66 prop str __entity_name__ "Cube_Cube.055"
+set entity 66 prop int racing_static_collide 1
+
+define entity floor_square 67
+set entity 67 frame -5.714959 221.142426 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 67 scale 1.000000 1.000000 1.000000
+set entity 67 prop str __entity_name__ "Cube_Cube.056"
+set entity 67 prop int racing_static_collide 1
+
+define entity floor_square 68
+set entity 68 frame -5.714959 199.077850 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 68 scale 1.000000 1.000000 1.000000
+set entity 68 prop str __entity_name__ "Cube_Cube.057"
+set entity 68 prop int racing_static_collide 1
+
+define entity floor_square 69
+set entity 69 frame -5.714959 243.558304 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 69 scale 1.000000 1.000000 1.000000
+set entity 69 prop str __entity_name__ "Cube_Cube.058"
+set entity 69 prop int racing_static_collide 1
+
+define entity floor_square 70
+set entity 70 frame -5.714959 265.622864 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 70 scale 1.000000 1.000000 1.000000
+set entity 70 prop str __entity_name__ "Cube_Cube.059"
+set entity 70 prop int racing_static_collide 1
+
+define entity floor_square 71
+set entity 71 frame -5.714959 354.579102 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 71 scale 1.000000 1.000000 1.000000
+set entity 71 prop str __entity_name__ "Cube_Cube.060"
+set entity 71 prop int racing_static_collide 1
+
+define entity floor_square 72
+set entity 72 frame -5.714959 332.514526 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 72 scale 1.000000 1.000000 1.000000
+set entity 72 prop str __entity_name__ "Cube_Cube.061"
+set entity 72 prop int racing_static_collide 1
+
+define entity floor_square 73
+set entity 73 frame -5.714959 288.034088 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 73 scale 1.000000 1.000000 1.000000
+set entity 73 prop str __entity_name__ "Cube_Cube.062"
+set entity 73 prop int racing_static_collide 1
+
+define entity floor_square 74
+set entity 74 frame -5.714959 310.098694 4.227991 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 74 scale 1.000000 1.000000 1.000000
+set entity 74 prop str __entity_name__ "Cube_Cube.063"
+set entity 74 prop int racing_static_collide 1
+
+define entity floor_square 75
+set entity 75 frame -5.846404 132.227905 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 75 scale 1.000000 1.000000 1.000000
+set entity 75 prop str __entity_name__ "Cube_Cube.064"
+set entity 75 prop int racing_static_collide 1
+
+define entity floor_square 76
+set entity 76 frame -5.846404 110.163330 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 76 scale 1.000000 1.000000 1.000000
+set entity 76 prop str __entity_name__ "Cube_Cube.065"
+set entity 76 prop int racing_static_collide 1
+
+define entity floor_square 77
+set entity 77 frame -5.846404 154.643768 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 77 scale 1.000000 1.000000 1.000000
+set entity 77 prop str __entity_name__ "Cube_Cube.066"
+set entity 77 prop int racing_static_collide 1
+
+define entity floor_square 78
+set entity 78 frame -5.846404 176.708344 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 78 scale 1.000000 1.000000 1.000000
+set entity 78 prop str __entity_name__ "Cube_Cube.067"
+set entity 78 prop int racing_static_collide 1
+
+define entity floor_square 79
+set entity 79 frame -5.846404 87.752106 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 79 scale 1.000000 1.000000 1.000000
+set entity 79 prop str __entity_name__ "Cube_Cube.068"
+set entity 79 prop int racing_static_collide 1
+
+define entity floor_square 80
+set entity 80 frame -5.846404 65.687531 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 80 scale 1.000000 1.000000 1.000000
+set entity 80 prop str __entity_name__ "Cube_Cube.069"
+set entity 80 prop int racing_static_collide 1
+
+define entity floor_square 81
+set entity 81 frame -5.846404 21.207092 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 81 scale 1.000000 1.000000 1.000000
+set entity 81 prop str __entity_name__ "Cube_Cube.070"
+set entity 81 prop int racing_static_collide 1
+
+define entity floor_square 82
+set entity 82 frame -5.846404 43.271667 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 82 scale 1.000000 1.000000 1.000000
+set entity 82 prop str __entity_name__ "Cube_Cube.071"
+set entity 82 prop int racing_static_collide 1
+
+define entity floor_square 83
+set entity 83 frame -5.846404 43.271667 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 83 scale 1.000000 1.000000 1.000000
+set entity 83 prop str __entity_name__ "Cube_Cube.072"
+set entity 83 prop int racing_static_collide 1
+
+define entity floor_square 84
+set entity 84 frame -5.846404 0.000000 4.030847 0.000000 1.000000 -0.000000 0.832020 -0.000000 -0.554745
+set entity 84 scale 1.000000 1.000000 1.000000
+set entity 84 prop str __entity_name__ "Cube_Cube.073"
+set entity 84 prop int racing_static_collide 1
+
+define entity floor_square 85
+set entity 85 frame 5.548537 0.000000 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 85 scale 1.000000 1.000000 1.000000
+set entity 85 prop str __entity_name__ "Cube_Cube.074"
+set entity 85 prop int racing_static_collide 1
+
+define entity floor_square 86
+set entity 86 frame 5.548537 43.271667 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 86 scale 1.000000 1.000000 1.000000
+set entity 86 prop str __entity_name__ "Cube_Cube.075"
+set entity 86 prop int racing_static_collide 1
+
+define entity floor_square 87
+set entity 87 frame 5.548537 43.271667 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 87 scale 1.000000 1.000000 1.000000
+set entity 87 prop str __entity_name__ "Cube_Cube.076"
+set entity 87 prop int racing_static_collide 1
+
+define entity floor_square 88
+set entity 88 frame 5.548537 21.207092 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 88 scale 1.000000 1.000000 1.000000
+set entity 88 prop str __entity_name__ "Cube_Cube.077"
+set entity 88 prop int racing_static_collide 1
+
+define entity floor_square 89
+set entity 89 frame 5.548537 65.687531 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 89 scale 1.000000 1.000000 1.000000
+set entity 89 prop str __entity_name__ "Cube_Cube.078"
+set entity 89 prop int racing_static_collide 1
+
+define entity floor_square 90
+set entity 90 frame 5.548537 87.752106 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 90 scale 1.000000 1.000000 1.000000
+set entity 90 prop str __entity_name__ "Cube_Cube.079"
+set entity 90 prop int racing_static_collide 1
+
+define entity floor_square 91
+set entity 91 frame 5.548537 176.708344 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 91 scale 1.000000 1.000000 1.000000
+set entity 91 prop str __entity_name__ "Cube_Cube.080"
+set entity 91 prop int racing_static_collide 1
+
+define entity floor_square 92
+set entity 92 frame 5.548537 154.643768 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 92 scale 1.000000 1.000000 1.000000
+set entity 92 prop str __entity_name__ "Cube_Cube.081"
+set entity 92 prop int racing_static_collide 1
+
+define entity floor_square 93
+set entity 93 frame 5.548537 110.163330 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 93 scale 1.000000 1.000000 1.000000
+set entity 93 prop str __entity_name__ "Cube_Cube.082"
+set entity 93 prop int racing_static_collide 1
+
+define entity floor_square 94
+set entity 94 frame 5.548537 132.227905 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 94 scale 1.000000 1.000000 1.000000
+set entity 94 prop str __entity_name__ "Cube_Cube.083"
+set entity 94 prop int racing_static_collide 1
+
+define entity floor_square 95
+set entity 95 frame 5.671616 310.098694 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 95 scale 1.000000 1.000000 1.000000
+set entity 95 prop str __entity_name__ "Cube_Cube.084"
+set entity 95 prop int racing_static_collide 1
+
+define entity floor_square 96
+set entity 96 frame 5.671616 288.034088 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 96 scale 1.000000 1.000000 1.000000
+set entity 96 prop str __entity_name__ "Cube_Cube.085"
+set entity 96 prop int racing_static_collide 1
+
+define entity floor_square 97
+set entity 97 frame 5.671616 332.514526 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 97 scale 1.000000 1.000000 1.000000
+set entity 97 prop str __entity_name__ "Cube_Cube.086"
+set entity 97 prop int racing_static_collide 1
+
+define entity floor_square 98
+set entity 98 frame 5.671616 354.579102 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 98 scale 1.000000 1.000000 1.000000
+set entity 98 prop str __entity_name__ "Cube_Cube.087"
+set entity 98 prop int racing_static_collide 1
+
+define entity floor_square 99
+set entity 99 frame 5.671616 265.622864 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 99 scale 1.000000 1.000000 1.000000
+set entity 99 prop str __entity_name__ "Cube_Cube.088"
+set entity 99 prop int racing_static_collide 1
+
+define entity floor_square 100
+set entity 100 frame 5.671616 243.558304 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 100 scale 1.000000 1.000000 1.000000
+set entity 100 prop str __entity_name__ "Cube_Cube.089"
+set entity 100 prop int racing_static_collide 1
+
+define entity floor_square 101
+set entity 101 frame 5.671616 199.077850 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 101 scale 1.000000 1.000000 1.000000
+set entity 101 prop str __entity_name__ "Cube_Cube.090"
+set entity 101 prop int racing_static_collide 1
+
+define entity floor_square 102
+set entity 102 frame 5.671616 221.142426 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 102 scale 1.000000 1.000000 1.000000
+set entity 102 prop str __entity_name__ "Cube_Cube.091"
+set entity 102 prop int racing_static_collide 1
+
+define entity floor_square 103
+set entity 103 frame 5.671616 576.856079 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 103 scale 1.000000 1.000000 1.000000
+set entity 103 prop str __entity_name__ "Cube_Cube.092"
+set entity 103 prop int racing_static_collide 1
+
+define entity floor_square 104
+set entity 104 frame 5.671616 554.791504 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 104 scale 1.000000 1.000000 1.000000
+set entity 104 prop str __entity_name__ "Cube_Cube.093"
+set entity 104 prop int racing_static_collide 1
+
+define entity floor_square 105
+set entity 105 frame 5.671616 599.271973 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 105 scale 1.000000 1.000000 1.000000
+set entity 105 prop str __entity_name__ "Cube_Cube.094"
+set entity 105 prop int racing_static_collide 1
+
+define entity floor_square 106
+set entity 106 frame 5.671616 621.336548 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 106 scale 1.000000 1.000000 1.000000
+set entity 106 prop str __entity_name__ "Cube_Cube.095"
+set entity 106 prop int racing_static_collide 1
+
+define entity floor_square 107
+set entity 107 frame 5.671616 710.292725 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 107 scale 1.000000 1.000000 1.000000
+set entity 107 prop str __entity_name__ "Cube_Cube.096"
+set entity 107 prop int racing_static_collide 1
+
+define entity floor_square 108
+set entity 108 frame 5.671616 688.228149 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 108 scale 1.000000 1.000000 1.000000
+set entity 108 prop str __entity_name__ "Cube_Cube.097"
+set entity 108 prop int racing_static_collide 1
+
+define entity floor_square 109
+set entity 109 frame 5.671616 643.747742 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 109 scale 1.000000 1.000000 1.000000
+set entity 109 prop str __entity_name__ "Cube_Cube.098"
+set entity 109 prop int racing_static_collide 1
+
+define entity floor_square 110
+set entity 110 frame 5.671616 665.812378 3.812328 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 110 scale 1.000000 1.000000 1.000000
+set entity 110 prop str __entity_name__ "Cube_Cube.099"
+set entity 110 prop int racing_static_collide 1
+
+define entity floor_square 111
+set entity 111 frame 5.548537 487.941559 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 111 scale 1.000000 1.000000 1.000000
+set entity 111 prop str __entity_name__ "Cube_Cube.100"
+set entity 111 prop int racing_static_collide 1
+
+define entity floor_square 112
+set entity 112 frame 5.548537 465.876984 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 112 scale 1.000000 1.000000 1.000000
+set entity 112 prop str __entity_name__ "Cube_Cube.101"
+set entity 112 prop int racing_static_collide 1
+
+define entity floor_square 113
+set entity 113 frame 5.548537 510.357422 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 113 scale 1.000000 1.000000 1.000000
+set entity 113 prop str __entity_name__ "Cube_Cube.102"
+set entity 113 prop int racing_static_collide 1
+
+define entity floor_square 114
+set entity 114 frame 5.548537 532.421997 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 114 scale 1.000000 1.000000 1.000000
+set entity 114 prop str __entity_name__ "Cube_Cube.103"
+set entity 114 prop int racing_static_collide 1
+
+define entity floor_square 115
+set entity 115 frame 5.548537 443.465759 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 115 scale 1.000000 1.000000 1.000000
+set entity 115 prop str __entity_name__ "Cube_Cube.104"
+set entity 115 prop int racing_static_collide 1
+
+define entity floor_square 116
+set entity 116 frame 5.548537 421.401184 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 116 scale 1.000000 1.000000 1.000000
+set entity 116 prop str __entity_name__ "Cube_Cube.105"
+set entity 116 prop int racing_static_collide 1
+
+define entity floor_square 117
+set entity 117 frame 5.548537 376.920746 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 117 scale 1.000000 1.000000 1.000000
+set entity 117 prop str __entity_name__ "Cube_Cube.106"
+set entity 117 prop int racing_static_collide 1
+
+define entity floor_square 118
+set entity 118 frame 5.548537 398.985321 4.014801 -0.000000 1.000000 -0.000000 -0.854509 -0.000000 -0.519436
+set entity 118 scale 1.000000 1.000000 1.000000
+set entity 118 prop str __entity_name__ "Cube_Cube.107"
+set entity 118 prop int racing_static_collide 1
+
+define entity obelisk01 119
+set entity 119 frame 4.838571 18.520771 3.181598 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 119 scale 1.000000 1.000000 1.000000
+set entity 119 prop str __entity_name__ "Cube_Cube.108"
+set entity 119 prop int racing_static_collide 1
+
+define entity obelisk01 120
+set entity 120 frame 4.805164 41.179947 3.252677 0.085287 0.995115 0.049724 -0.910200 0.098116 -0.402379
+set entity 120 scale 1.000000 1.000000 1.000000
+set entity 120 prop str __entity_name__ "Cube_Cube.109"
+set entity 120 prop int racing_static_collide 1
+
+define entity obelisk01 121
+set entity 121 frame 4.073505 50.687794 4.674251 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 121 scale 1.000000 1.000000 1.000000
+set entity 121 prop str __entity_name__ "Cube_Cube.110"
+set entity 121 prop int racing_static_collide 1
+
+define entity obelisk01 122
+set entity 122 frame 6.357634 67.598511 0.480632 0.098607 1.242940 0.074042 -1.070927 0.122551 -0.631032
+set entity 122 scale 1.249041 1.249041 1.249041
+set entity 122 prop str __entity_name__ "Cube_Cube.111"
+set entity 122 prop int racing_static_collide 1
+
+define entity obelisk01 123
+set entity 123 frame 2.747910 88.391602 7.357187 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 123 scale 1.000000 1.000000 1.000000
+set entity 123 prop str __entity_name__ "Cube_Cube.112"
+set entity 123 prop int racing_static_collide 1
+
+define entity obelisk01 124
+set entity 124 frame 6.336418 108.587257 0.735337 0.068231 0.995115 0.071351 -0.763609 0.098116 -0.638180
+set entity 124 scale 1.000000 1.000000 1.000000
+set entity 124 prop str __entity_name__ "Cube_Cube.113"
+set entity 124 prop int racing_static_collide 1
+
+define entity obelisk01 125
+set entity 125 frame 3.284610 134.574539 6.593147 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 125 scale 1.000000 1.000000 1.000000
+set entity 125 prop str __entity_name__ "Cube_Cube.114"
+set entity 125 prop int racing_static_collide 1
+
+define entity obelisk01 126
+set entity 126 frame 6.203573 158.235901 1.244734 0.091181 0.995115 0.037848 -0.955909 0.098116 -0.276787
+set entity 126 scale 1.000000 1.000000 1.000000
+set entity 126 prop str __entity_name__ "Cube_Cube.115"
+set entity 126 prop int racing_static_collide 1
+
+define entity obelisk01 127
+set entity 127 frame 4.151123 201.539551 5.319744 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 127 scale 1.000000 1.000000 1.000000
+set entity 127 prop str __entity_name__ "Cube_Cube.116"
+set entity 127 prop int racing_static_collide 1
+
+define entity obelisk01 128
+set entity 128 frame 6.341415 225.253265 1.531516 0.092855 0.995115 0.033531 -0.967834 0.098116 -0.231671
+set entity 128 scale 1.000000 1.000000 1.000000
+set entity 128 prop str __entity_name__ "Cube_Cube.117"
+set entity 128 prop int racing_static_collide 1
+
+define entity obelisk01 129
+set entity 129 frame 3.051430 246.476685 7.505323 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 129 scale 1.000000 1.000000 1.000000
+set entity 129 prop str __entity_name__ "Cube_Cube.118"
+set entity 129 prop int racing_static_collide 1
+
+define entity obelisk01 130
+set entity 130 frame 4.792222 284.724213 4.591325 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 130 scale 1.000000 1.000000 1.000000
+set entity 130 prop str __entity_name__ "Cube_Cube.119"
+set entity 130 prop int racing_static_collide 1
+
+define entity obelisk01 131
+set entity 131 frame 6.158663 335.166809 2.405850 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 131 scale 1.000000 1.000000 1.000000
+set entity 131 prop str __entity_name__ "Cube_Cube.120"
+set entity 131 prop int racing_static_collide 1
+
+define entity obelisk01 132
+set entity 132 frame 5.237238 356.216553 4.154298 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 132 scale 1.000000 1.000000 1.000000
+set entity 132 prop str __entity_name__ "Cube_Cube.121"
+set entity 132 prop int racing_static_collide 1
+
+define entity obelisk01 133
+set entity 133 frame 6.379265 378.773376 9.852392 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 133 scale 1.000000 1.000000 1.000000
+set entity 133 prop str __entity_name__ "Cube_Cube.122"
+set entity 133 prop int racing_static_collide 1
+
+define entity obelisk01 134
+set entity 134 frame 6.477674 425.534851 3.441643 0.084969 0.995115 0.050266 -0.907619 0.098116 -0.408169
+set entity 134 scale 1.000000 1.000000 1.000000
+set entity 134 prop str __entity_name__ "Cube_Cube.123"
+set entity 134 prop int racing_static_collide 1
+
+define entity obelisk01 135
+set entity 135 frame 6.202359 467.630249 2.988805 0.072311 1.257317 0.101638 -0.838487 0.123969 -0.937005
+set entity 135 scale 1.263489 1.263490 1.263490
+set entity 135 prop str __entity_name__ "Cube_Cube.124"
+set entity 135 prop int racing_static_collide 1
+
+define entity obelisk01 136
+set entity 136 frame 4.472619 509.390594 4.510247 0.109303 1.320393 0.072197 -1.176006 0.130188 -0.600548
+set entity 136 scale 1.326875 1.326874 1.326875
+set entity 136 prop str __entity_name__ "Cube_Cube.125"
+set entity 136 prop int racing_static_collide 1
+
+define entity obelisk01 137
+set entity 137 frame 7.699075 535.444763 0.657647 0.090835 0.995115 0.038672 -0.953362 0.098116 -0.285436
+set entity 137 scale 1.000000 1.000000 1.000000
+set entity 137 prop str __entity_name__ "Cube_Cube.126"
+set entity 137 prop int racing_static_collide 1
+
+define entity obelisk01 138
+set entity 138 frame 4.571070 556.166626 6.340049 0.065206 0.995115 0.074126 -0.736418 0.098116 -0.669374
+set entity 138 scale 1.000000 1.000000 1.000000
+set entity 138 prop str __entity_name__ "Cube_Cube.127"
+set entity 138 prop int racing_static_collide 1
+
+define entity obelisk01 139
+set entity 139 frame 6.597046 579.546692 2.843226 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 139 scale 1.000000 1.000000 1.000000
+set entity 139 prop str __entity_name__ "Cube_Cube.128"
+set entity 139 prop int racing_static_collide 1
+
+define entity obelisk01 140
+set entity 140 frame 7.260044 619.306519 5.223190 0.078946 0.995115 0.059279 -0.857399 0.098116 -0.505213
+set entity 140 scale 1.000000 1.000000 1.000000
+set entity 140 prop str __entity_name__ "Cube_Cube.129"
+set entity 140 prop int racing_static_collide 1
+
+define entity obelisk01 141
+set entity 141 frame 7.592875 643.520630 1.386276 0.094286 0.995115 0.029269 -0.977378 0.098116 -0.187364
+set entity 141 scale 1.000000 1.000000 1.000000
+set entity 141 prop str __entity_name__ "Cube_Cube.130"
+set entity 141 prop int racing_static_collide 1
+
+define entity obelisk01 142
+set entity 142 frame 4.992622 669.422058 7.360269 0.127451 1.355564 0.042919 -1.324944 0.133655 -0.286880
+set entity 142 scale 1.362219 1.362219 1.362219
+set entity 142 prop str __entity_name__ "Cube_Cube.131"
+set entity 142 prop int racing_static_collide 1
+
+define entity obelisk01 143
+set entity 143 frame -4.086007 556.166565 5.668961 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 143 scale 1.262779 1.262779 1.262779
+set entity 143 prop str __entity_name__ "Cube_Cube.132"
+set entity 143 prop int racing_static_collide 1
+
+define entity obelisk01 144
+set entity 144 frame -1.070069 486.759979 -0.181101 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 144 scale 1.262779 1.262779 1.262779
+set entity 144 prop str __entity_name__ "Cube_Cube.133"
+set entity 144 prop int racing_static_collide 1
+
+define entity obelisk01 145
+set entity 145 frame -4.085945 441.885010 5.668876 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 145 scale 1.262779 1.262779 1.262779
+set entity 145 prop str __entity_name__ "Cube_Cube.134"
+set entity 145 prop int racing_static_collide 1
+
+define entity obelisk01 146
+set entity 146 frame -2.440896 419.148376 2.477944 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 146 scale 1.262779 1.262779 1.262779
+set entity 146 prop str __entity_name__ "Cube_Cube.135"
+set entity 146 prop int racing_static_collide 1
+
+define entity obelisk01 147
+set entity 147 frame -3.811734 373.076752 5.137005 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 147 scale 1.262779 1.262779 1.262779
+set entity 147 prop str __entity_name__ "Cube_Cube.136"
+set entity 147 prop int racing_static_collide 1
+
+define entity obelisk01 148
+set entity 148 frame -3.537540 332.988464 4.605156 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 148 scale 1.262779 1.262779 1.262779
+set entity 148 prop str __entity_name__ "Cube_Cube.137"
+set entity 148 prop int racing_static_collide 1
+
+define entity obelisk01 149
+set entity 149 frame -3.263304 217.510254 4.073253 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 149 scale 1.262779 1.262779 1.262779
+set entity 149 prop str __entity_name__ "Cube_Cube.138"
+set entity 149 prop int racing_static_collide 1
+
+define entity obelisk01 150
+set entity 150 frame -3.537442 154.685318 4.605027 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 150 scale 1.262779 1.262779 1.262779
+set entity 150 prop str __entity_name__ "Cube_Cube.139"
+set entity 150 prop int racing_static_collide 1
+
+define entity obelisk01 151
+set entity 151 frame -3.263331 267.171875 4.073289 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 151 scale 1.262779 1.262779 1.262779
+set entity 151 prop str __entity_name__ "Cube_Cube.140"
+set entity 151 prop int racing_static_collide 1
+
+define entity obelisk01 152
+set entity 152 frame -2.714877 68.525406 3.009507 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 152 scale 1.262779 1.262779 1.262779
+set entity 152 prop str __entity_name__ "Cube_Cube.141"
+set entity 152 prop int racing_static_collide 1
+
+define entity obelisk01 153
+set entity 153 frame -3.263206 38.010433 4.073123 -0.113586 1.256610 0.051382 1.080185 0.123899 -0.642231
+set entity 153 scale 1.262779 1.262779 1.262779
+set entity 153 prop str __entity_name__ "Cube_Cube.142"
+set entity 153 prop int racing_static_collide 1
+
+define entity floor_square 154
+set entity 154 frame 9.474064 402.101837 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 154 scale 1.695506 1.695506 1.055038
+set entity 154 prop str __entity_name__ "Cube_Cube.143"
+set entity 154 prop int racing_static_collide 1
+
+define entity floor_square 155
+set entity 155 frame 9.474064 378.822876 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 155 scale 1.695506 1.695506 1.055038
+set entity 155 prop str __entity_name__ "Cube_Cube.144"
+set entity 155 prop int racing_static_collide 1
+
+define entity floor_square 156
+set entity 156 frame 9.474064 425.751434 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 156 scale 1.695506 1.695506 1.055038
+set entity 156 prop str __entity_name__ "Cube_Cube.145"
+set entity 156 prop int racing_static_collide 1
+
+define entity floor_square 157
+set entity 157 frame 9.474064 449.030365 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 157 scale 1.695506 1.695506 1.055038
+set entity 157 prop str __entity_name__ "Cube_Cube.146"
+set entity 157 prop int racing_static_collide 1
+
+define entity floor_square 158
+set entity 158 frame 9.474064 542.882568 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 158 scale 1.695506 1.695506 1.055038
+set entity 158 prop str __entity_name__ "Cube_Cube.147"
+set entity 158 prop int racing_static_collide 1
+
+define entity floor_square 159
+set entity 159 frame 9.474064 519.603638 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 159 scale 1.695506 1.695506 1.055038
+set entity 159 prop str __entity_name__ "Cube_Cube.148"
+set entity 159 prop int racing_static_collide 1
+
+define entity floor_square 160
+set entity 160 frame 9.474064 472.675049 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 160 scale 1.695506 1.695506 1.055038
+set entity 160 prop str __entity_name__ "Cube_Cube.149"
+set entity 160 prop int racing_static_collide 1
+
+define entity floor_square 161
+set entity 161 frame 9.474064 495.954041 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 161 scale 1.695506 1.695506 1.055038
+set entity 161 prop str __entity_name__ "Cube_Cube.150"
+set entity 161 prop int racing_static_collide 1
+
+define entity floor_square 162
+set entity 162 frame 9.682745 683.614441 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 162 scale 1.695506 1.695506 1.055038
+set entity 162 prop str __entity_name__ "Cube_Cube.151"
+set entity 162 prop int racing_static_collide 1
+
+define entity floor_square 163
+set entity 163 frame 9.682745 660.335449 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 163 scale 1.695506 1.695506 1.055038
+set entity 163 prop str __entity_name__ "Cube_Cube.152"
+set entity 163 prop int racing_static_collide 1
+
+define entity floor_square 164
+set entity 164 frame 9.682745 707.263916 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 164 scale 1.695506 1.695506 1.055038
+set entity 164 prop str __entity_name__ "Cube_Cube.153"
+set entity 164 prop int racing_static_collide 1
+
+define entity floor_square 165
+set entity 165 frame 9.682745 730.542847 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 165 scale 1.695506 1.695506 1.055038
+set entity 165 prop str __entity_name__ "Cube_Cube.154"
+set entity 165 prop int racing_static_collide 1
+
+define entity floor_square 166
+set entity 166 frame 9.682745 636.690796 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 166 scale 1.695506 1.695506 1.055038
+set entity 166 prop str __entity_name__ "Cube_Cube.155"
+set entity 166 prop int racing_static_collide 1
+
+define entity floor_square 167
+set entity 167 frame 9.682745 613.411804 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 167 scale 1.695506 1.695506 1.055038
+set entity 167 prop str __entity_name__ "Cube_Cube.156"
+set entity 167 prop int racing_static_collide 1
+
+define entity floor_square 168
+set entity 168 frame 9.682745 566.483276 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 168 scale 1.695506 1.695506 1.055038
+set entity 168 prop str __entity_name__ "Cube_Cube.157"
+set entity 168 prop int racing_static_collide 1
+
+define entity floor_square 169
+set entity 169 frame 9.682745 589.762207 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 169 scale 1.695506 1.695506 1.055038
+set entity 169 prop str __entity_name__ "Cube_Cube.158"
+set entity 169 prop int racing_static_collide 1
+
+define entity floor_square 170
+set entity 170 frame 9.682745 214.470871 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 170 scale 1.695506 1.695506 1.055038
+set entity 170 prop str __entity_name__ "Cube_Cube.159"
+set entity 170 prop int racing_static_collide 1
+
+define entity floor_square 171
+set entity 171 frame 9.682745 191.191910 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 171 scale 1.695506 1.695506 1.055038
+set entity 171 prop str __entity_name__ "Cube_Cube.160"
+set entity 171 prop int racing_static_collide 1
+
+define entity floor_square 172
+set entity 172 frame 9.682745 238.120468 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 172 scale 1.695506 1.695506 1.055038
+set entity 172 prop str __entity_name__ "Cube_Cube.161"
+set entity 172 prop int racing_static_collide 1
+
+define entity floor_square 173
+set entity 173 frame 9.682745 261.399414 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 173 scale 1.695506 1.695506 1.055038
+set entity 173 prop str __entity_name__ "Cube_Cube.162"
+set entity 173 prop int racing_static_collide 1
+
+define entity floor_square 174
+set entity 174 frame 9.682745 355.251617 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 174 scale 1.695506 1.695506 1.055038
+set entity 174 prop str __entity_name__ "Cube_Cube.163"
+set entity 174 prop int racing_static_collide 1
+
+define entity floor_square 175
+set entity 175 frame 9.682745 331.972656 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 175 scale 1.695506 1.695506 1.055038
+set entity 175 prop str __entity_name__ "Cube_Cube.164"
+set entity 175 prop int racing_static_collide 1
+
+define entity floor_square 176
+set entity 176 frame 9.682745 285.044098 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 176 scale 1.695506 1.695506 1.055038
+set entity 176 prop str __entity_name__ "Cube_Cube.165"
+set entity 176 prop int racing_static_collide 1
+
+define entity floor_square 177
+set entity 177 frame 9.682745 308.323090 5.665074 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 177 scale 1.695506 1.695506 1.055038
+set entity 177 prop str __entity_name__ "Cube_Cube.166"
+set entity 177 prop int racing_static_collide 1
+
+define entity floor_square 178
+set entity 178 frame 9.474064 120.662689 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 178 scale 1.695506 1.695506 1.055038
+set entity 178 prop str __entity_name__ "Cube_Cube.167"
+set entity 178 prop int racing_static_collide 1
+
+define entity floor_square 179
+set entity 179 frame 9.474064 97.383728 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 179 scale 1.695506 1.695506 1.055038
+set entity 179 prop str __entity_name__ "Cube_Cube.168"
+set entity 179 prop int racing_static_collide 1
+
+define entity floor_square 180
+set entity 180 frame 9.474064 144.312271 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 180 scale 1.695506 1.695506 1.055038
+set entity 180 prop str __entity_name__ "Cube_Cube.169"
+set entity 180 prop int racing_static_collide 1
+
+define entity floor_square 181
+set entity 181 frame 9.474064 167.591232 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 181 scale 1.695506 1.695506 1.055038
+set entity 181 prop str __entity_name__ "Cube_Cube.170"
+set entity 181 prop int racing_static_collide 1
+
+define entity floor_square 182
+set entity 182 frame 9.474064 73.739044 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 182 scale 1.695506 1.695506 1.055038
+set entity 182 prop str __entity_name__ "Cube_Cube.171"
+set entity 182 prop int racing_static_collide 1
+
+define entity floor_square 183
+set entity 183 frame 9.474064 50.460083 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 183 scale 1.695506 1.695506 1.055038
+set entity 183 prop str __entity_name__ "Cube_Cube.172"
+set entity 183 prop int racing_static_collide 1
+
+define entity floor_square 184
+set entity 184 frame 9.474064 3.531555 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 184 scale 1.695506 1.695506 1.055038
+set entity 184 prop str __entity_name__ "Cube_Cube.173"
+set entity 184 prop int racing_static_collide 1
+
+define entity floor_square 185
+set entity 185 frame 9.474064 26.810516 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 185 scale 1.695506 1.695506 1.055038
+set entity 185 prop str __entity_name__ "Cube_Cube.174"
+set entity 185 prop int racing_static_collide 1
+
+define entity floor_square 186
+set entity 186 frame 9.474064 26.810516 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 186 scale 1.695506 1.695506 1.055038
+set entity 186 prop str __entity_name__ "Cube_Cube.175"
+set entity 186 prop int racing_static_collide 1
+
+define entity floor_square 187
+set entity 187 frame 9.474064 -18.842743 6.008368 -0.000000 1.055038 -0.000000 -1.448826 -0.000000 -0.880707
+set entity 187 scale 1.695506 1.695506 1.055038
+set entity 187 prop str __entity_name__ "Cube_Cube.176"
+set entity 187 prop int racing_static_collide 1
+
+define entity floor_square 188
+set entity 188 frame -9.846125 -18.842743 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 188 scale 1.695506 1.695506 1.055038
+set entity 188 prop str __entity_name__ "Cube_Cube.177"
+set entity 188 prop int racing_static_collide 1
+
+define entity floor_square 189
+set entity 189 frame -9.846125 26.810516 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 189 scale 1.695506 1.695506 1.055038
+set entity 189 prop str __entity_name__ "Cube_Cube.178"
+set entity 189 prop int racing_static_collide 1
+
+define entity floor_square 190
+set entity 190 frame -9.846125 26.810516 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 190 scale 1.695506 1.695506 1.055038
+set entity 190 prop str __entity_name__ "Cube_Cube.179"
+set entity 190 prop int racing_static_collide 1
+
+define entity floor_square 191
+set entity 191 frame -9.846125 3.531555 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 191 scale 1.695506 1.695506 1.055038
+set entity 191 prop str __entity_name__ "Cube_Cube.180"
+set entity 191 prop int racing_static_collide 1
+
+define entity floor_square 192
+set entity 192 frame -9.846125 50.460083 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 192 scale 1.695506 1.695506 1.055038
+set entity 192 prop str __entity_name__ "Cube_Cube.181"
+set entity 192 prop int racing_static_collide 1
+
+define entity floor_square 193
+set entity 193 frame -9.846125 73.739044 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 193 scale 1.695506 1.695506 1.055038
+set entity 193 prop str __entity_name__ "Cube_Cube.182"
+set entity 193 prop int racing_static_collide 1
+
+define entity floor_square 194
+set entity 194 frame -9.846125 167.591232 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 194 scale 1.695506 1.695506 1.055038
+set entity 194 prop str __entity_name__ "Cube_Cube.183"
+set entity 194 prop int racing_static_collide 1
+
+define entity floor_square 195
+set entity 195 frame -9.846125 144.312271 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 195 scale 1.695506 1.695506 1.055038
+set entity 195 prop str __entity_name__ "Cube_Cube.184"
+set entity 195 prop int racing_static_collide 1
+
+define entity floor_square 196
+set entity 196 frame -9.846125 97.383728 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 196 scale 1.695506 1.695506 1.055038
+set entity 196 prop str __entity_name__ "Cube_Cube.185"
+set entity 196 prop int racing_static_collide 1
+
+define entity floor_square 197
+set entity 197 frame -9.846125 120.662689 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 197 scale 1.695506 1.695506 1.055038
+set entity 197 prop str __entity_name__ "Cube_Cube.186"
+set entity 197 prop int racing_static_collide 1
+
+define entity floor_square 198
+set entity 198 frame -9.623259 308.323090 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 198 scale 1.695506 1.695506 1.055038
+set entity 198 prop str __entity_name__ "Cube_Cube.187"
+set entity 198 prop int racing_static_collide 1
+
+define entity floor_square 199
+set entity 199 frame -9.623259 285.044098 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 199 scale 1.695506 1.695506 1.055038
+set entity 199 prop str __entity_name__ "Cube_Cube.188"
+set entity 199 prop int racing_static_collide 1
+
+define entity floor_square 200
+set entity 200 frame -9.623259 331.972656 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 200 scale 1.695506 1.695506 1.055038
+set entity 200 prop str __entity_name__ "Cube_Cube.189"
+set entity 200 prop int racing_static_collide 1
+
+define entity floor_square 201
+set entity 201 frame -9.623259 355.251617 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 201 scale 1.695506 1.695506 1.055038
+set entity 201 prop str __entity_name__ "Cube_Cube.190"
+set entity 201 prop int racing_static_collide 1
+
+define entity floor_square 202
+set entity 202 frame -9.623259 261.399414 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 202 scale 1.695506 1.695506 1.055038
+set entity 202 prop str __entity_name__ "Cube_Cube.191"
+set entity 202 prop int racing_static_collide 1
+
+define entity floor_square 203
+set entity 203 frame -9.623259 238.120468 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 203 scale 1.695506 1.695506 1.055038
+set entity 203 prop str __entity_name__ "Cube_Cube.192"
+set entity 203 prop int racing_static_collide 1
+
+define entity floor_square 204
+set entity 204 frame -9.623259 191.191910 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 204 scale 1.695506 1.695506 1.055038
+set entity 204 prop str __entity_name__ "Cube_Cube.193"
+set entity 204 prop int racing_static_collide 1
+
+define entity floor_square 205
+set entity 205 frame -9.623259 214.470871 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 205 scale 1.695506 1.695506 1.055038
+set entity 205 prop str __entity_name__ "Cube_Cube.194"
+set entity 205 prop int racing_static_collide 1
+
+define entity floor_square 206
+set entity 206 frame -9.623259 589.762207 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 206 scale 1.695506 1.695506 1.055038
+set entity 206 prop str __entity_name__ "Cube_Cube.195"
+set entity 206 prop int racing_static_collide 1
+
+define entity floor_square 207
+set entity 207 frame -9.623259 566.483276 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 207 scale 1.695506 1.695506 1.055038
+set entity 207 prop str __entity_name__ "Cube_Cube.196"
+set entity 207 prop int racing_static_collide 1
+
+define entity floor_square 208
+set entity 208 frame -9.623259 613.411804 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 208 scale 1.695506 1.695506 1.055038
+set entity 208 prop str __entity_name__ "Cube_Cube.197"
+set entity 208 prop int racing_static_collide 1
+
+define entity floor_square 209
+set entity 209 frame -9.623259 636.690796 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 209 scale 1.695506 1.695506 1.055038
+set entity 209 prop str __entity_name__ "Cube_Cube.198"
+set entity 209 prop int racing_static_collide 1
+
+define entity floor_square 210
+set entity 210 frame -9.623259 730.542847 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 210 scale 1.695506 1.695506 1.055038
+set entity 210 prop str __entity_name__ "Cube_Cube.199"
+set entity 210 prop int racing_static_collide 1
+
+define entity floor_square 211
+set entity 211 frame -9.623259 707.263916 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 211 scale 1.695506 1.695506 1.055038
+set entity 211 prop str __entity_name__ "Cube_Cube.200"
+set entity 211 prop int racing_static_collide 1
+
+define entity floor_square 212
+set entity 212 frame -9.623259 660.335449 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 212 scale 1.695506 1.695506 1.055038
+set entity 212 prop str __entity_name__ "Cube_Cube.201"
+set entity 212 prop int racing_static_collide 1
+
+define entity floor_square 213
+set entity 213 frame -9.623259 683.614441 6.369833 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 213 scale 1.695506 1.695506 1.055038
+set entity 213 prop str __entity_name__ "Cube_Cube.202"
+set entity 213 prop int racing_static_collide 1
+
+define entity floor_square 214
+set entity 214 frame -9.846125 495.954041 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 214 scale 1.695506 1.695506 1.055038
+set entity 214 prop str __entity_name__ "Cube_Cube.203"
+set entity 214 prop int racing_static_collide 1
+
+define entity floor_square 215
+set entity 215 frame -9.846125 472.675049 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 215 scale 1.695506 1.695506 1.055038
+set entity 215 prop str __entity_name__ "Cube_Cube.204"
+set entity 215 prop int racing_static_collide 1
+
+define entity floor_square 216
+set entity 216 frame -9.846125 519.603638 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 216 scale 1.695506 1.695506 1.055038
+set entity 216 prop str __entity_name__ "Cube_Cube.205"
+set entity 216 prop int racing_static_collide 1
+
+define entity floor_square 217
+set entity 217 frame -9.846125 542.882568 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 217 scale 1.695506 1.695506 1.055038
+set entity 217 prop str __entity_name__ "Cube_Cube.206"
+set entity 217 prop int racing_static_collide 1
+
+define entity floor_square 218
+set entity 218 frame -9.846125 449.030365 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 218 scale 1.695506 1.695506 1.055038
+set entity 218 prop str __entity_name__ "Cube_Cube.207"
+set entity 218 prop int racing_static_collide 1
+
+define entity floor_square 219
+set entity 219 frame -9.846125 425.751434 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 219 scale 1.695506 1.695506 1.055038
+set entity 219 prop str __entity_name__ "Cube_Cube.208"
+set entity 219 prop int racing_static_collide 1
+
+define entity floor_square 220
+set entity 220 frame -9.846125 378.822876 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 220 scale 1.695506 1.695506 1.055038
+set entity 220 prop str __entity_name__ "Cube_Cube.209"
+set entity 220 prop int racing_static_collide 1
+
+define entity floor_square 221
+set entity 221 frame -9.846125 402.101837 6.035573 0.000000 1.055038 -0.000000 1.410695 -0.000000 -0.940574
+set entity 221 scale 1.695506 1.695506 1.055038
+set entity 221 prop str __entity_name__ "Cube_Cube.210"
+set entity 221 prop int racing_static_collide 1
+
+define entity floor_square 222
+set entity 222 frame 0.066487 402.101837 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 222 scale 1.695506 1.695506 1.055038
+set entity 222 prop str __entity_name__ "Cube_Cube.211"
+set entity 222 prop int racing_static_collide 1
+
+define entity floor_square 223
+set entity 223 frame 0.066487 378.822876 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 223 scale 1.695506 1.695506 1.055038
+set entity 223 prop str __entity_name__ "Cube_Cube.212"
+set entity 223 prop int racing_static_collide 1
+
+define entity floor_square 224
+set entity 224 frame 0.066487 425.751434 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 224 scale 1.695506 1.695506 1.055038
+set entity 224 prop str __entity_name__ "Cube_Cube.213"
+set entity 224 prop int racing_static_collide 1
+
+define entity floor_square 225
+set entity 225 frame 0.066487 449.030365 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 225 scale 1.695506 1.695506 1.055038
+set entity 225 prop str __entity_name__ "Cube_Cube.214"
+set entity 225 prop int racing_static_collide 1
+
+define entity floor_square 226
+set entity 226 frame 0.066487 542.882568 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 226 scale 1.695506 1.695506 1.055038
+set entity 226 prop str __entity_name__ "Cube_Cube.215"
+set entity 226 prop int racing_static_collide 1
+
+define entity floor_square 227
+set entity 227 frame 0.066487 519.603638 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 227 scale 1.695506 1.695506 1.055038
+set entity 227 prop str __entity_name__ "Cube_Cube.216"
+set entity 227 prop int racing_static_collide 1
+
+define entity floor_square 228
+set entity 228 frame 0.066487 472.675049 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 228 scale 1.695506 1.695506 1.055038
+set entity 228 prop str __entity_name__ "Cube_Cube.217"
+set entity 228 prop int racing_static_collide 1
+
+define entity floor_square 229
+set entity 229 frame 0.066487 495.954041 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 229 scale 1.695506 1.695506 1.055038
+set entity 229 prop str __entity_name__ "Cube_Cube.218"
+set entity 229 prop int racing_static_collide 1
+
+define entity floor_square 230
+set entity 230 frame -0.335258 683.614441 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 230 scale 1.695506 1.695506 1.055038
+set entity 230 prop str __entity_name__ "Cube_Cube.219"
+set entity 230 prop int racing_static_collide 1
+
+define entity floor_square 231
+set entity 231 frame -0.335258 660.335449 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 231 scale 1.695506 1.695506 1.055038
+set entity 231 prop str __entity_name__ "Cube_Cube.220"
+set entity 231 prop int racing_static_collide 1
+
+define entity floor_square 232
+set entity 232 frame -0.335258 707.263916 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 232 scale 1.695506 1.695506 1.055038
+set entity 232 prop str __entity_name__ "Cube_Cube.221"
+set entity 232 prop int racing_static_collide 1
+
+define entity floor_square 233
+set entity 233 frame -0.335258 730.542847 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 233 scale 1.695506 1.695506 1.055038
+set entity 233 prop str __entity_name__ "Cube_Cube.222"
+set entity 233 prop int racing_static_collide 1
+
+define entity floor_square 234
+set entity 234 frame -0.335258 636.690796 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 234 scale 1.695506 1.695506 1.055038
+set entity 234 prop str __entity_name__ "Cube_Cube.223"
+set entity 234 prop int racing_static_collide 1
+
+define entity floor_square 235
+set entity 235 frame -0.335258 613.411804 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 235 scale 1.695506 1.695506 1.055038
+set entity 235 prop str __entity_name__ "Cube_Cube.224"
+set entity 235 prop int racing_static_collide 1
+
+define entity floor_square 236
+set entity 236 frame -0.335258 566.483276 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 236 scale 1.695506 1.695506 1.055038
+set entity 236 prop str __entity_name__ "Cube_Cube.225"
+set entity 236 prop int racing_static_collide 1
+
+define entity floor_square 237
+set entity 237 frame -0.335258 589.762207 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 237 scale 1.695506 1.695506 1.055038
+set entity 237 prop str __entity_name__ "Cube_Cube.226"
+set entity 237 prop int racing_static_collide 1
+
+define entity floor_square 238
+set entity 238 frame -0.335258 214.470871 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 238 scale 1.695506 1.695506 1.055038
+set entity 238 prop str __entity_name__ "Cube_Cube.227"
+set entity 238 prop int racing_static_collide 1
+
+define entity floor_square 239
+set entity 239 frame -0.335258 191.191910 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 239 scale 1.695506 1.695506 1.055038
+set entity 239 prop str __entity_name__ "Cube_Cube.228"
+set entity 239 prop int racing_static_collide 1
+
+define entity floor_square 240
+set entity 240 frame -0.335258 238.120468 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 240 scale 1.695506 1.695506 1.055038
+set entity 240 prop str __entity_name__ "Cube_Cube.229"
+set entity 240 prop int racing_static_collide 1
+
+define entity floor_square 241
+set entity 241 frame -0.335258 261.399414 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 241 scale 1.695506 1.695506 1.055038
+set entity 241 prop str __entity_name__ "Cube_Cube.230"
+set entity 241 prop int racing_static_collide 1
+
+define entity floor_square 242
+set entity 242 frame -0.335258 355.251617 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 242 scale 1.695506 1.695506 1.055038
+set entity 242 prop str __entity_name__ "Cube_Cube.231"
+set entity 242 prop int racing_static_collide 1
+
+define entity floor_square 243
+set entity 243 frame -0.335258 331.972656 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 243 scale 1.695506 1.695506 1.055038
+set entity 243 prop str __entity_name__ "Cube_Cube.232"
+set entity 243 prop int racing_static_collide 1
+
+define entity floor_square 244
+set entity 244 frame -0.335258 285.044098 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 244 scale 1.695506 1.695506 1.055038
+set entity 244 prop str __entity_name__ "Cube_Cube.233"
+set entity 244 prop int racing_static_collide 1
+
+define entity floor_square 245
+set entity 245 frame -0.335258 308.323090 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 245 scale 1.695506 1.695506 1.055038
+set entity 245 prop str __entity_name__ "Cube_Cube.234"
+set entity 245 prop int racing_static_collide 1
+
+define entity floor_square 246
+set entity 246 frame 0.066487 120.662689 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 246 scale 1.695506 1.695506 1.055038
+set entity 246 prop str __entity_name__ "Cube_Cube.235"
+set entity 246 prop int racing_static_collide 1
+
+define entity floor_square 247
+set entity 247 frame 0.066487 97.383720 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 247 scale 1.695506 1.695506 1.055038
+set entity 247 prop str __entity_name__ "Cube_Cube.236"
+set entity 247 prop int racing_static_collide 1
+
+define entity floor_square 248
+set entity 248 frame 0.066487 144.312271 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 248 scale 1.695506 1.695506 1.055038
+set entity 248 prop str __entity_name__ "Cube_Cube.237"
+set entity 248 prop int racing_static_collide 1
+
+define entity floor_square 249
+set entity 249 frame 0.066487 167.591232 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 249 scale 1.695506 1.695506 1.055038
+set entity 249 prop str __entity_name__ "Cube_Cube.238"
+set entity 249 prop int racing_static_collide 1
+
+define entity floor_square 250
+set entity 250 frame 0.066487 73.739044 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 250 scale 1.695506 1.695506 1.055038
+set entity 250 prop str __entity_name__ "Cube_Cube.239"
+set entity 250 prop int racing_static_collide 1
+
+define entity floor_square 251
+set entity 251 frame 0.066487 50.460083 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 251 scale 1.695506 1.695506 1.055038
+set entity 251 prop str __entity_name__ "Cube_Cube.240"
+set entity 251 prop int racing_static_collide 1
+
+define entity floor_square 252
+set entity 252 frame 0.066487 3.531555 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 252 scale 1.695506 1.695506 1.055038
+set entity 252 prop str __entity_name__ "Cube_Cube.241"
+set entity 252 prop int racing_static_collide 1
+
+define entity floor_square 253
+set entity 253 frame 0.066487 26.810516 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 253 scale 1.695506 1.695506 1.055038
+set entity 253 prop str __entity_name__ "Cube_Cube.242"
+set entity 253 prop int racing_static_collide 1
+
+define entity floor_square 254
+set entity 254 frame 0.066487 26.810516 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 254 scale 1.695506 1.695506 1.055038
+set entity 254 prop str __entity_name__ "Cube_Cube.243"
+set entity 254 prop int racing_static_collide 1
+
+define entity floor_square 255
+set entity 255 frame 0.066487 3.531555 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 255 scale 1.695506 1.695506 1.055038
+set entity 255 prop str __entity_name__ "Cube_Cube.244"
+set entity 255 prop int racing_static_collide 1
+
+define entity floor_square 256
+set entity 256 frame 0.066487 -18.842743 -8.315990 -0.000000 1.055038 0.000000 0.000000 -0.000000 1.695506
+set entity 256 scale 1.695506 1.695506 1.055038
+set entity 256 prop str __entity_name__ "Cube_Cube.245"
+set entity 256 prop int racing_static_collide 1
+
+define model marker
+define entity marker 257
+set entity 257 frame -5.057934 0.000000 2.690495 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 257 scale 1.000000 1.000000 1.000000
+set entity 257 prop str __entity_name__ "focusmarker"
+set entity 257 prop int ray_shoot 1
+set entity 257 prop int currentFocus 1
+set entity 257 prop str ray_shoot_entity "shippy"
+
+define model pointer
+define entity pointer 258
+set entity 258 frame 0.873166 -3.600783 1.484044 -0.000000 0.090957 0.000000 0.000000 -0.000000 0.090957
+set entity 258 scale 0.090957 0.090957 0.090957
+set entity 258 prop str __entity_name__ "pointer"
+set entity 258 prop str __entity_parent__ "Camera"
+set entity 258 prop int racing_point_at_next 1
+
+define model shippy
+define entity shippy 259
+set entity 259 frame 0.000000 -1.988011 1.115568 -0.000000 1.000000 0.000000 0.000000 -0.000000 1.000000
+set entity 259 scale 1.000000 1.000000 1.000000
+set entity 259 prop str __entity_name__ "shippy"
+set entity 259 prop int player 1
+set entity 259 prop int currentControl 1
+

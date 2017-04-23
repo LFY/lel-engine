@@ -30,14 +30,20 @@ set entity 4 scale 0.337054 0.337054 0.337054
 set entity 4 prop str __entity_name__ "menuselector_start_level3"
 set entity 4 prop str static_text "level 3: the reckoning"
 
+define entity cube 5
+set entity 5 frame -1.500000 -6.000000 -0.000000 -0.000000 0.337054 0.000000 0.000000 -0.000000 0.337054
+set entity 5 scale 0.337054 0.337054 0.337054
+set entity 5 prop str __entity_name__ "menuselector_start_level4"
+set entity 5 prop str static_text "level 4: tunnel vision"
+
 define model menuselector
-define entity menuselector 5
-set entity 5 frame -4.000000 0.000000 0.500000 -0.000000 -0.000000 1.000000 0.000000 -1.000000 -0.000000
-set entity 5 scale 1.000000 1.000000 1.000000
-set entity 5 prop str __entity_name__ "selector"
-set entity 5 prop int currentControl 1
-set entity 5 prop int menuselector 1
-set entity 5 prop int player 1
-set entity 5 prop str menuselector_opt "menuselector_start_level1 menuselector_start_level2 menuselector_start_level3 menuselector_exit"
-set entity 5 prop str menuselector_current "menuselector_start"
+define entity menuselector 6
+set entity 6 frame -4.000000 0.000000 0.500000 -0.000000 -0.000000 1.000000 0.000000 -1.000000 -0.000000
+set entity 6 scale 1.000000 1.000000 1.000000
+set entity 6 prop str __entity_name__ "selector"
+set entity 6 prop int currentControl 1
+set entity 6 prop int menuselector 1
+set entity 6 prop int player 1
+set entity 6 prop str menuselector_opt "menuselector_start_level1 menuselector_start_level2 menuselector_start_level3 menuselector_start_level4 menuselector_exit"
+set entity 6 prop str menuselector_current "menuselector_start"
 

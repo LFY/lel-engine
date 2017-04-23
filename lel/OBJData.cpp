@@ -42,6 +42,7 @@ OBJData::OBJData(const std::string& filename,
     loadFile(filename.c_str(), &buf);
 
 	std::string str(buf);
+	if (buf) free(buf);
 	std::vector<std::string> lines;
 	const size_t kNull = std::string::npos;
 
@@ -57,8 +58,6 @@ OBJData::OBJData(const std::string& filename,
 	}
 
 	lines.push_back(str.substr(currStart, kNull));
-
-	free(buf);
 
 	for (const auto& line : lines) {
 		size_t commentPos = line.find("#");

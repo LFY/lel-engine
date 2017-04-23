@@ -36,15 +36,18 @@
 #endif
 
 #include <chrono>
+#include <fstream>
+#include <sstream>
+#include <string>
 
 namespace LEL {
 
 uint64_t loadFile(const char* filename, char** out) {
     FILE* fh = NULL;
 #ifdef _WIN32
-        fopen_s(&fh, filename, "r");
+        fopen_s(&fh, filename, "rb");
 #else
-        fh = fopen(filename, "r");
+        fh = fopen(filename, "rb");
 #endif
     if (!fh) { return 0; }
 
