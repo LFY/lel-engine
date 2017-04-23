@@ -30,6 +30,7 @@
 #include "lel.h"
 
 #include <sstream>
+#include "math.h"
 
 namespace LEL {
 

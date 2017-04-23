@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EE8863401EA832AC000693F4 /* MenuSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE88633C1EA832AC000693F4 /* MenuSelector.cpp */; };
+		EE8863441EAD2C25000693F4 /* Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8863411EAD2C25000693F4 /* Audio.cpp */; };
+		EE8863451EAD2C25000693F4 /* RayShooter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8863431EAD2C25000693F4 /* RayShooter.cpp */; };
+		EE88634A1EAD2DD8000693F4 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8863491EAD2DD8000693F4 /* SDL2_mixer.framework */; };
 		EE9804C11E46FDDF00A484AA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9804C01E46FDDF00A484AA /* OpenGL.framework */; };
 		EE9804C31E46FDF000A484AA /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9804C21E46FDF000A484AA /* GLEW.framework */; };
 		EE9804C51E46FE0000A484AA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9804C41E46FE0000A484AA /* SDL2.framework */; };
@@ -49,6 +52,12 @@
 		EE88633D1EA832AC000693F4 /* MenuSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuSelector.h; path = ../lel/MenuSelector.h; sourceTree = "<group>"; };
 		EE88633E1EA832AC000693F4 /* SecondaryUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondaryUpdate.h; path = ../lel/SecondaryUpdate.h; sourceTree = "<group>"; };
 		EE88633F1EA832AC000693F4 /* GL32RenderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GL32RenderState.h; path = ../lel/GL32RenderState.h; sourceTree = "<group>"; };
+		EE8863411EAD2C25000693F4 /* Audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Audio.cpp; path = ../lel/Audio.cpp; sourceTree = "<group>"; };
+		EE8863421EAD2C25000693F4 /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Audio.h; path = ../lel/Audio.h; sourceTree = "<group>"; };
+		EE8863431EAD2C25000693F4 /* RayShooter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RayShooter.cpp; path = ../lel/RayShooter.cpp; sourceTree = "<group>"; };
+		EE8863461EAD2C32000693F4 /* RayShooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RayShooter.h; path = ../lel/RayShooter.h; sourceTree = "<group>"; };
+		EE8863471EAD2CA6000693F4 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../third_party/frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		EE8863491EAD2DD8000693F4 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		EE9804B51E46FDB900A484AA /* LEL-xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LEL-xcode"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9804C01E46FDDF00A484AA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		EE9804C21E46FDF000A484AA /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = ../../../../Library/Frameworks/GLEW.framework; sourceTree = "<group>"; };
@@ -101,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE88634A1EAD2DD8000693F4 /* SDL2_mixer.framework in Frameworks */,
 				EE9804C51E46FE0000A484AA /* SDL2.framework in Frameworks */,
 				EE9804C31E46FDF000A484AA /* GLEW.framework in Frameworks */,
 				EE9804C11E46FDDF00A484AA /* OpenGL.framework in Frameworks */,
@@ -130,6 +140,8 @@
 		EE9804BF1E46FDDF00A484AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE8863491EAD2DD8000693F4 /* SDL2_mixer.framework */,
+				EE8863471EAD2CA6000693F4 /* SDL2_mixer.framework */,
 				EE9804C41E46FE0000A484AA /* SDL2.framework */,
 				EE9804C21E46FDF000A484AA /* GLEW.framework */,
 				EE9804C01E46FDDF00A484AA /* OpenGL.framework */,
@@ -150,6 +162,10 @@
 		EE9804C71E46FE1300A484AA /* lel */ = {
 			isa = PBXGroup;
 			children = (
+				EE8863461EAD2C32000693F4 /* RayShooter.h */,
+				EE8863411EAD2C25000693F4 /* Audio.cpp */,
+				EE8863421EAD2C25000693F4 /* Audio.h */,
+				EE8863431EAD2C25000693F4 /* RayShooter.cpp */,
 				EE88633C1EA832AC000693F4 /* MenuSelector.cpp */,
 				EE88633D1EA832AC000693F4 /* MenuSelector.h */,
 				EE88633E1EA832AC000693F4 /* SecondaryUpdate.h */,
@@ -269,6 +285,7 @@
 				EE9804EA1E4701D400A484AA /* lel.cpp in Sources */,
 				EE9804E01E46FE4100A484AA /* OBB.cpp in Sources */,
 				EE9804DD1E46FE4100A484AA /* Entity.cpp in Sources */,
+				EE8863451EAD2C25000693F4 /* RayShooter.cpp in Sources */,
 				EE9804E11E46FE4100A484AA /* OBJData.cpp in Sources */,
 				EEFCE9A01E6392A800843409 /* EntitySystemControl.cpp in Sources */,
 				EEFCE99E1E6392A800843409 /* Collider.cpp in Sources */,
@@ -276,6 +293,7 @@
 				EE8863401EA832AC000693F4 /* MenuSelector.cpp in Sources */,
 				EEC348EA1E8F530700312A92 /* TextDisplay.cpp in Sources */,
 				EE9804E81E46FF8400A484AA /* lodepng.cpp in Sources */,
+				EE8863441EAD2C25000693F4 /* Audio.cpp in Sources */,
 				EEC348EC1E94686400312A92 /* Compass.cpp in Sources */,
 				EE9804EE1E47165A00A484AA /* GameControllers.cpp in Sources */,
 				EE9804DE1E46FE4100A484AA /* MainLoop.cpp in Sources */,
